@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pepsi website landing page</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="https://freepngimg.com/thumb/pepsi_logo/32196-3-pepsi-logo-transparent.png" class="logo"></a>
+           <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I Like</span></h2>
+                <p>Pepsi was first invented in 1893 as "Brad's Drink" by Caleb Bradham, who sold the drink at his drugstore in New Bern, 
+                    North Carolina.PepsiCo entered India in 1989 and has grown to become one of the largest MNC food and beverage businesses 
+                    in India. PepsiCo India's diverse portfolio includes iconic brands like Pepsi, Lay's, Kurkure, Tropicana 100%, Gatorade and
+                     Quaker. Guiding PepsiCo is our vision to Be the Global Leader in Convenient Foods and Beverages by Winning with Purpose</p>
+                     <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi.png?mtime=20180110134757" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/dietpepsi.png" onclick="imgSlider('images/dietpepsi.png');changeBgColor('rgb(20,149,111)')"></li>
+            <li><img src="images/blackpepsi.png" onclick="imgSlider('images/blackpepsi.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="images/goldenpepsi.png" onclick="imgSlider('images/goldenpepsi.png');changeBgColor('#1e1e1e')"></li>
+            <li><img src="images/silverpepsi.png" onclick="imgSlider('images/silverpepsi.png');changeBgColor('rgb(50,178,200)')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-supportive-guru-14.png"></a></li>
+            <li><a href="#"><img src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-logo-abundant-instagram-logo-simple-icon-1.png"></a></li>
+            <li><a href="#"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-white-circle-png-images-23.png"></a></li>
+        </ul>
+    </section>
+  
+    <hr>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background=color;
+        }
+    </script>
+    <section style="background-color:#0062be;">
+        <div class="circle"></div>
+        <div class="intro">
+            <div class="nitro">
+                <h2>INTRODUCING<br><span>NITRO</span style="border:black;border-width:5px;"><u>PEPSI</u></h2><br><br><br>
+                    <p>"Smooth,creamy,delicious"</p><br>
+                <a href="#">learn more</a>
+            </div>
+            <div class="imgBox2">
+                <img src="images/nitropepsi.png">
+            </div>
+            
+        </div>
+    </section>
+    
+
+ </body>
+ <footer class="footer">
+       
+    <a href="#"><img src="https://freepngimg.com/thumb/pepsi_logo/32196-3-pepsi-logo-transparent.png" class="logo2"></a>
+    <div class="row">
+        <div class="column1">
+            <ul>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">terms & conditions</a></li>
+                <li><a href="#">privacy policy</a></li>
+            </ul>
+        </div>
+        <div class="column2">
+            <ul>
+                <li><a href="#">copyright</a></li>
+                <li><a href="#">product facts</a></li>
+                <li><a href="#">store location</a></li>
+        </div>
+       
+    </div>
+</footer>
+</html>

@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+section{
+    position: relative;
+    
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0062be;
+    transition: 0.5s;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding :20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+header .logo:hover{
+ 
+    transform: translateX(-15px); 
+   transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+  
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+   font-weight: 400;
+    margin-left:40px ;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background:#02100a;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+header ul li a:hover{
+    transform: translateY(-15px);
+    background:darkgoldenrod ;
+}
+.content{
+    position: relative;
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.content .textBox h2 span{
+    color: #fff;
+    font-size: 2em;
+   font-weight: 900;
+}
+.content .textBox p{
+    color: #fff;
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background:#fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.content .textBox a:hover{
+    background: yellow;
+    text-decoration:dotted;
+    text-transform:uppercase;
+    font-family: cursive;
+}
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    padding-right:50px ;
+    margin-top:50px;
+    justify-content: flex-end;
+}
+.content .imgBox img{
+    max-width: 260px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 50px;
+}
+.sci{
+    position: absolute;
+    top: 40%;
+   
+    left: 100px;
+    transform: translateY(-7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li{
+    list-style:none;
+}
+.sci li a{
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
+}
+.sci li a img{
+    max-width: 60px;
+    margin-left: 3700%;
+}
+.intro{
+    position: relative;
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro .nitro{
+    position: relative;
+    max-width: 600px;
+    display: inline-block;
+}
+.intro .nitro h2{
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 60%;
+    margin-top: 3px;
+
+}
+.intro .nitro h2 span{
+    color: #b8762f;
+    font-size: 3em;
+   font-weight: 900;
+   text-align: center;
+   margin-left:15px;
+   margin-bottom: 200px;
+   border:#02100a;
+   border-width: 5px;
+}
+.intro .nitro a{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 400px;
+    padding: 8px 20px;
+    background:#fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.intro .nitro p{
+    color: rgb(241, 202, 151);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 60px;
+   font-weight: 400%;
+   max-width: 900;
+   margin-left: 50%;
+}
+.intro .imgBox2{
+    width: 600px;
+    display: flex;
+    padding-right:50px ;
+    margin-top:50px;
+    justify-content: flex-end;
+}
+.intro .imgBox2 img{
+    max-width: 240px;
+}
+hr{
+    margin-top: 0px;
+}
+.circle{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: white;
+    clip-path: circle(400px at left 50px);
+}
+.footer{
+    position: absolute;
+    top: 1600px;
+    left: 0;
+    width: 100%;
+    margin-bottom: 50%;
+    padding :20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0062be;
+}
+.footer .logo2{
+    position: relative;
+    max-width: 100px;
+}
+.footer .row{
+    position: relative;
+    display: flex;
+}
+.footer  .column1 li a{
+    display: inline-block;
+   font-weight: 20;
+    margin-left:10px ;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background:#02100a;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-right: 500px;
+} 
+.footer .column2 li a{
+    display: block;
+   font-weight: 400;
+    margin-left:40px ;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background:#02100a;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.footer  .column1 li a:hover{
+    background:pink;
+    color: #02100a;
+}
+.footer  .column2 li a:hover{
+    background:pink;
+    color: #02100a;
+}
